@@ -1,8 +1,12 @@
-### PKL Tracker Local – Deskripsi, Fitur, Tampilan, dan Cara Penggunaan
+### PKLTrackerLocal
 
-PKL Tracker Local adalah aplikasi berbasis Android yang dikembangkan untuk membantu siswa dalam mengelola kegiatan Praktik Kerja Lapangan (PKL) secara digital. Aplikasi ini dirancang agar pencatatan kehadiran, jam kerja, aktivitas harian, dan dokumentasi kegiatan PKL dapat dilakukan dengan lebih mudah, praktis, dan terorganisasi.
+Aplikasi Pencatatan Presensi dan Logbook Praktik Kerja Lapangan
 
-Aplikasi ini dikembangkan menggunakan Flutter dengan bahasa pemrograman Dart serta SQLite sebagai database lokal untuk menyimpan data pada perangkat. Dengan konsep penyimpanan lokal, pengguna dapat mengelola catatan PKL tanpa harus selalu terhubung ke internet.
+### 1\. Deskripsi Aplikasi
+
+PKLTrackerLocal merupakan aplikasi berbasis Android yang dirancang untuk membantu siswa dalam mengelola dan mendokumentasikan kegiatan Praktik Kerja Lapangan (PKL) secara digital. Aplikasi ini menyediakan berbagai fitur, seperti presensi harian, pencatatan jam masuk dan jam pulang, logbook kegiatan, serta dokumentasi foto melalui kamera maupun galeri.
+
+Aplikasi ini dikembangkan menggunakan Flutter dengan bahasa pemrograman Dart dan SQLite sebagai database lokal untuk menyimpan data langsung pada perangkat. Dengan adanya aplikasi ini, siswa dapat mencatat aktivitas PKL secara lebih praktis, teratur, dan mudah diakses.
 
 Dikembangkan oleh:
 
@@ -10,45 +14,23 @@ Dikembangkan oleh:
 
 * Amira Dianawati
 
-### 1\. Tujuan Pembuatan
+### 2\. Tujuan Pembuatan Aplikasi
 
-PKL Tracker Local dibuat untuk:
-
-* Mempermudah siswa melakukan presensi harian.
+* Mempermudah siswa melakukan presensi harian selama PKL.
 
 * Membantu pencatatan jam masuk dan jam pulang.
 
-* Menyimpan kegiatan yang dilakukan selama PKL.
+* Memudahkan siswa mendokumentasikan kegiatan PKL.
 
-* Menyediakan dokumentasi foto sebagai bukti kegiatan.
+* Menyimpan data presensi dan logbook secara digital.
 
-* Memudahkan siswa melihat kembali riwayat kegiatan dan kehadiran.
+* Memudahkan siswa melihat riwayat dan rekap kegiatan PKL.
 
-* Membantu siswa menyimpan informasi PKL secara digital.
+### 3\. Fitur-Fitur Aplikasi
 
-### 2\. Fitur-Fitur Aplikasi
+A. Profil Siswa
 
-### 3\. Tampilan dan Halaman Aplikasi
-
-PKL Tracker Local memiliki beberapa halaman utama yang dibuat untuk memisahkan fungsi setiap fitur agar pengguna lebih mudah mengoperasikan aplikasi.
-
-### A. Halaman Login dan Daftar Akun
-
-![Onboarding (Login / Register)- Mobile App UI/UX Design :: Behance](https://images.openai.com/static-rsc-4/fu8D5EOLe0nbNHKcIIFs3_YY97XD6_2tHuyvo405z58xaJRVPnN0y98KUp7B-Szq4ysFB9DdNTrwWDsP2fUFXetBdlqyp7H5qCQltvFoTnw2BOPh_2tMVHgeA7PMj4JssN6TZnRxbJKfkT84GZC2W2CVG4cQQIfZtMePMvSDYxI9DpNz--ZH3hLKqQbZC6wH?purpose=fullsize)
-
-Halaman ini merupakan tampilan awal aplikasi. Pengguna dapat masuk menggunakan username dan password akun lokal yang sudah dibuat. Bagi pengguna yang belum memiliki akun, tersedia pilihan untuk melakukan pendaftaran akun terlebih dahulu.
-
-### B. Halaman Beranda (Dashboard)
-
-![Kevin Gilbert Toding | Android Engineer](https://images.openai.com/static-rsc-4/Qg5bj3yU7DVg8zdhKlJZQrsaAAHaqqrEXN-YAGUBrR9CC3n0Nu40kUGKqm4x2_1NP_EXekSkQtPpIMLQ-sw_Hrek_7LCj1ZwZWh4uidefYfU_hYOAb3L5UGzeQ9A8N57sPdDtx0uG6Lga0gFKea5tPBDzpD3_kaX4r9N7z1aWAuEHuLjG8qGMDSjXacvGURA?purpose=fullsize)
-
-Halaman beranda menjadi pusat informasi aplikasi. Di dalamnya terdapat ringkasan aktivitas PKL, informasi kehadiran, total logbook, serta akses menuju fitur-fitur utama seperti presensi, logbook, profil, dan rekap.
-
-### C. Halaman Profil Siswa
-
-![Pintro | Modern EduApp Platform](https://images.openai.com/static-rsc-4/AaR-_6H012adqXf2tUatBnv6YV7Nuqxubn2IWSMr2xoQ1IpVg0wY8WGtsTbBAi_SM9xlJI-d8Sh7jgA5Aqoew4fdExLmU3gXjL-uDRoR58TTIIE6rQEU-RJ6sgIbizi6RtYhuhr5TJOeLuer2ll7wgEpzrmJpdniAKWtVA9XPwbnWdbf9U_e6b7r5JEQ2emj?purpose=fullsize)
-
-Halaman profil digunakan untuk mengisi dan menyimpan identitas siswa, seperti:
+Digunakan untuk menyimpan identitas siswa, seperti:
 
 * Nama lengkap.
 
@@ -64,180 +46,203 @@ Halaman profil digunakan untuk mengisi dan menyimpan identitas siswa, seperti:
 
 * Tanggal mulai dan selesai PKL.
 
-### D. Halaman Presensi PKL
+B. Presensi PKL
 
-![Kanishka Software - Simplifying Business Operations with Smart Software Solutions](https://images.openai.com/static-rsc-4/Y3x24GDO6ALO55mL3VfUQFD68Ue99giBYdhNi_Evo1znz4iuDQUI4PkXKHGBkykIlHWQuz00oIBvnCoVTXWTet6Xe4J49C3J14n97plsi0u3ayEj3Q-dScmXU5Vdwo1Y6GkVVLQf1buzqzvcnmr-A2D6uznVujp-YYfJTx_cIbcysLmAkAD5JC8Vfx_P29aA?purpose=fullsize)
+Digunakan untuk mencatat kehadiran siswa setiap hari, meliputi:
 
-Halaman presensi digunakan untuk mencatat kehadiran siswa setiap hari. Pengguna dapat mencatat tanggal, jam masuk, jam pulang, serta status kehadiran berupa hadir, izin, sakit, atau alpha. Sistem juga mencegah pencatatan presensi ganda pada tanggal yang sama.
+* Tanggal presensi.
 
-### E. Halaman Logbook PKL
+* Jam masuk.
 
-![Diese Berichte gibt es im Ausbildungsnachweis … · News · Das bessere Digitale-Berichtsheft · Zubido Ausbildungs-App](https://images.openai.com/static-rsc-4/41Bj5aXFgzBjIy9e2tOkEI9EmBgeIqy_tUiE9UrtvZR2Rx4XstOwrKR59RrkRYPH6jhgeg9UDZZqSbvzEt52uTPwwe6DD0xaTt1qFE9XeH2FiDdDHtW1tMYF1lj-oBicLOCA4TtZIssg5itb74uYZ1F6j6kbyYrpaUpl6aZLk_uGa6m-LCjv2IfOrI-5Is7z?purpose=fullsize)
+* Jam pulang.
 
-Halaman logbook digunakan untuk mencatat seluruh kegiatan yang dilakukan selama PKL. Informasi yang dapat dimasukkan meliputi:
+* Status kehadiran (hadir, izin, sakit, dan alpha).
+
+C. Logbook Kegiatan
+
+Digunakan untuk mencatat aktivitas siswa selama PKL, meliputi:
 
 * Tanggal kegiatan.
 
-* Jam mulai dan jam selesai.
+* Jam mulai dan selesai.
 
 * Deskripsi kegiatan.
 
 * Kompetensi yang diperoleh.
 
-* Kendala yang dihadapi.
+* Kendala dan solusi.
 
-* Solusi yang dilakukan.
+* Foto dokumentasi.
 
-* Foto dokumentasi kegiatan.
+D. Dokumentasi Foto
 
-Pengguna juga dapat menambahkan, mengedit, dan menghapus catatan logbook.
+Memungkinkan pengguna menambahkan foto kegiatan PKL melalui:
 
-### F. Halaman Rekap PKL
+* Kamera untuk mengambil foto secara langsung.
 
-![KurippEdu — Intelligent ERP for Higher Education](https://images.openai.com/static-rsc-4/Hpka_1am57I0YmiZG_KNdMDpEDGvnnLhZB_FG8lCqawUcbvmy6Xnydq9w_ZgGQ2OL0G_UDs44SD2loGzod4_XSSH0o3xmDQ10ESA6V_K1QAW4_hsWE9fITKKgVa4NDjEGP21Y2MyVnKCSP3H_vw-FM3BBsZUwLGq1BGvkmvz3fMmnXc0gunhGhP1sexxLC0Y?purpose=fullsize)
+* Galeri untuk memilih foto yang sudah tersimpan di perangkat.
 
-Halaman rekap menampilkan ringkasan data PKL, seperti total kehadiran, persentase kehadiran, total logbook, dan total jam kegiatan. Halaman ini membantu pengguna mengetahui perkembangan aktivitas PKL yang telah dicatat.
+E. Rekap PKL
 
-### G. Halaman Riwayat PKL
+Menampilkan ringkasan kegiatan PKL, seperti total kehadiran, persentase kehadiran, jumlah logbook, dan total jam kegiatan.
 
-![Google Nest cameras to gain AI features powered by Gemini next week - Neowin](https://images.openai.com/static-rsc-4/qCqr0QHIPubUEEQBjoEGSdTPj-h6KrJnY1Z6VUaLmAks_RI7ODR_mEqqFzg9raFCKKeMzKZTHI9pTK-tTbYkasNFJwZsoe3XrggxZyehICxG-ix2XxuTP_bQ-RxmEicyJuCAh6Z0alswS8tn3eIQi1qgh8mUp3XMvqtGNobHs5xTWsNcJcaS1kUmK9Fi3TlU?purpose=fullsize)
+F. Riwayat PKL
 
-Halaman riwayat digunakan untuk melihat kembali catatan presensi dan kegiatan PKL yang telah tersimpan. Tersedia juga kolom pencarian untuk membantu menemukan riwayat tertentu.
+Digunakan untuk melihat kembali catatan presensi dan logbook yang sudah disimpan.
 
-### H. Halaman Pengaturan
+G. Pengaturan
 
-![Daily UI Challenge | Settings by Mayank Chittora on Dribbble](https://images.openai.com/static-rsc-4/85BVwYXBfngGiPt-iXxijNr1Cex65T9-MrtOxwgXi8iKlXAqyMNF5tHBKZrRNaVPeI4ORXHb_ArzdZIGrFsMg-aTJQLJ36OoQoKQR8ZkozfhX1MBzp6ivqAP-f5prJArwJEmJf5kBBW9j-AfKdck4mN7XWmvGBphP7bD68MKNh1Hf1cgmc7DfgGUCbkB6GeJ?purpose=fullsize)
+Menyediakan pengaturan tampilan aplikasi, pengelolaan akun, dan pilihan penghapusan data.
 
-Halaman pengaturan menyediakan pilihan tampilan terang atau gelap, pengelolaan akun, fitur keluar dari akun, serta pilihan untuk menghapus seluruh data aplikasi.
+### 4\. Tampilan Halaman Aplikasi
 
-### 4\. Cara Menggunakan Aplikasi
+A. Halaman Login dan Daftar Akun
 
-### 1\. Membuka Aplikasi
+Merupakan halaman awal aplikasi yang digunakan untuk masuk ke akun atau membuat akun baru.
 
-* Instal aplikasi PKL Tracker Local pada perangkat Android.
+B. Halaman Dashboard
 
-* Buka aplikasi melalui ikon PKL Tracker Local.
+Menampilkan halaman utama yang berisi ringkasan aktivitas PKL dan akses menuju fitur-fitur utama aplikasi.
+
+C. Halaman Profil Siswa
+
+Menampilkan formulir untuk mengisi dan mengelola informasi pribadi serta data tempat PKL.
+
+D. Halaman Presensi
+
+Menampilkan fitur pencatatan kehadiran, jam masuk, jam pulang, dan status kehadiran siswa.
+
+E. Halaman Logbook
+
+Menampilkan formulir untuk menambahkan, mengedit, dan menghapus catatan kegiatan PKL.
+
+F. Halaman Rekap
+
+Menampilkan ringkasan data presensi dan kegiatan PKL yang telah dicatat.
+
+G. Halaman Riwayat
+
+Menampilkan daftar catatan kegiatan dan presensi yang sudah tersimpan.
+
+H. Halaman Pengaturan
+
+Menampilkan pilihan pengaturan aplikasi dan pengelolaan data pengguna.
+
+### 5\. Cara Menggunakan Aplikasi
+
+1\. Membuka Aplikasi
+
+* Instal aplikasi PKLTrackerLocal.
+
+* Buka aplikasi melalui perangkat Android.
 
 * Pengguna akan diarahkan ke halaman login.
 
-### 2\. Membuat Akun
+2\. Membuat Akun
 
-* Pilih menu daftar akun jika belum memiliki akun.
+* Pilih menu daftar akun.
 
 * Masukkan username dan password.
 
-* Setelah pendaftaran selesai, masuk menggunakan akun tersebut.
+* Setelah selesai, masuk menggunakan akun tersebut.
 
-### 3\. Mengisi Profil Siswa
+3\. Mengisi Profil
 
-* Buka halaman Profil Siswa.
+* Buka halaman profil siswa.
 
-* Masukkan identitas diri dan informasi tempat PKL.
+* Masukkan identitas dan informasi tempat PKL.
 
-* Isi nama pembimbing industri dan pembimbing sekolah.
+* Lengkapi data pembimbing serta tanggal pelaksanaan PKL.
 
-* Masukkan tanggal mulai dan tanggal selesai PKL.
+* Tekan tombol simpan.
 
-* Tekan tombol Simpan Profil.
+4\. Melakukan Presensi
 
-### 4\. Mengisi Presensi Harian
+* Buka menu presensi.
 
-* Buka menu Presensi PKL.
-
-* Pilih tanggal presensi.
+* Pilih tanggal kehadiran.
 
 * Masukkan jam masuk dan jam pulang.
 
-* Tentukan status kehadiran, seperti hadir, izin, sakit, atau alpha.
+* Tentukan status kehadiran.
 
 * Simpan data presensi.
 
-### 5\. Menambahkan Logbook Kegiatan
+5\. Mengisi Logbook
 
-* Buka menu Logbook PKL.
+* Buka menu logbook.
 
-* Tekan tombol Tambah Kegiatan.
+* Tekan tombol tambah kegiatan.
 
 * Masukkan tanggal dan waktu kegiatan.
 
-* Tuliskan deskripsi kegiatan yang dilakukan.
+* Tuliskan deskripsi kegiatan serta kompetensi yang diperoleh.
 
-* Isi kompetensi yang diperoleh.
-
-* Tambahkan kendala dan solusi jika ada.
+* Isi kendala dan solusi jika ada.
 
 * Tambahkan foto dokumentasi.
 
-* Tekan tombol Simpan Logbook.
+* Tekan tombol simpan.
 
-### 6\. Menambahkan Foto Dokumentasi
+6\. Menambahkan Foto
 
-Pengguna dapat menambahkan foto sebagai bukti kegiatan PKL melalui dua pilihan:
+* Pilih menu ambil foto untuk menggunakan kamera.
 
-* Ambil Foto: Menggunakan kamera perangkat untuk mengambil foto secara langsung.
+* Pilih menu galeri untuk mengambil foto yang sudah tersedia.
 
-* Pilih dari Galeri: Mengambil foto yang sudah tersimpan di galeri perangkat.
+* Gunakan foto tersebut sebagai dokumentasi kegiatan PKL.
 
-Setelah foto dipilih, foto akan digunakan sebagai dokumentasi pada catatan logbook.
+7\. Melihat Rekap dan Riwayat
 
-### 7\. Melihat Rekap dan Riwayat
+* Buka menu rekap untuk melihat ringkasan presensi dan kegiatan.
 
-* Buka menu Rekap untuk melihat ringkasan kehadiran dan aktivitas.
+* Buka menu riwayat untuk melihat catatan yang sudah tersimpan.
 
-* Periksa total kehadiran, persentase kehadiran, total logbook, dan total jam kegiatan.
+8\. Mengatur Aplikasi
 
-* Buka menu Riwayat untuk melihat catatan presensi dan logbook yang sudah tersimpan.
+* Buka menu pengaturan.
 
-* Gunakan kolom pencarian untuk menemukan catatan tertentu.
+* Pilih pengaturan yang tersedia.
 
-### 8\. Menggunakan Pengaturan
+* Gunakan fitur penghapusan data dengan hati-hati agar data penting tidak hilang.
 
-* Buka menu Pengaturan.
+### 6\. Teknologi yang Digunakan
 
-* Pilih tampilan terang atau gelap sesuai keinginan.
+| Teknologi    | Kegunaan                              |
+| ------------ | ------------------------------------- |
+| Flutter      | Framework pengembangan aplikasi       |
+| Dart         | Bahasa pemrograman                    |
+| SQLite       | Database penyimpanan lokal            |
+| Image Picker | Mengambil foto dari kamera dan galeri |
+| Android SDK  | Mendukung aplikasi Android            |
 
-* Pengguna dapat keluar dari akun melalui menu yang tersedia.
+### 7\. Keunggulan Aplikasi
 
-* Tersedia juga fitur hapus semua data. Fitur ini perlu digunakan dengan hati-hati karena akan menghapus profil, presensi, dan logbook.
+* Memiliki fitur presensi dan logbook dalam satu aplikasi.
 
-### 5\. Teknologi yang Digunakan
+* Menggunakan penyimpanan lokal sehingga tidak selalu membutuhkan internet.
 
-| Teknologi    | Kegunaan                                      |
-| ------------ | --------------------------------------------- |
-| Flutter      | Membuat tampilan dan aplikasi Android         |
-| Dart         | Bahasa pemrograman aplikasi                   |
-| SQLite       | Menyimpan data secara lokal                   |
-| Image Picker | Memilih foto dari kamera dan galeri           |
-| Android SDK  | Mendukung proses pembangunan aplikasi Android |
+* Mendukung dokumentasi kegiatan melalui foto.
 
-### 6\. Keunggulan Aplikasi
+* Mempermudah pencatatan aktivitas PKL.
 
-* Praktis: Presensi dan logbook tersedia dalam satu aplikasi.
+* Memiliki fitur pengelolaan dan riwayat data.
 
-* Penyimpanan lokal: Data disimpan pada perangkat menggunakan SQLite.
+* Membantu siswa menyimpan catatan PKL secara lebih terstruktur.
 
-* Dokumentasi: Mendukung penambahan foto kegiatan.
+### 8\. Kesimpulan
 
-* Mudah digunakan: Setiap fitur memiliki halaman dan fungsi tersendiri.
+PKLTrackerLocal merupakan aplikasi yang dikembangkan untuk membantu siswa dalam mengelola kegiatan Praktik Kerja Lapangan secara digital. Dengan berbagai fitur yang tersedia, seperti presensi, logbook, dokumentasi foto, rekap, dan riwayat kegiatan, aplikasi ini diharapkan dapat mempermudah siswa dalam mencatat serta memantau aktivitas PKL.
 
-* Pengelolaan data: Catatan dapat ditambahkan, diperbarui, dan dihapus.
+Melalui aplikasi ini, proses pencatatan kegiatan yang sebelumnya dilakukan secara manual dapat menjadi lebih praktis, terorganisasi, dan efisien.
 
-* Rekap aktivitas: Pengguna dapat melihat ringkasan kegiatan PKL.
+IDENTITAS PENGEMBANG
 
-### 7\. Penutup
+Nama Aplikasi: PKLTrackerLocal
 
-PKL Tracker Local merupakan inovasi aplikasi digital yang dibuat untuk membantu siswa dalam menjalankan kegiatan Praktik Kerja Lapangan. Melalui aplikasi ini, proses pencatatan presensi, pengisian logbook, dokumentasi foto, dan pemantauan aktivitas PKL dapat dilakukan dengan lebih mudah dan terstruktur.
+Dikembangkan oleh:
 
-Harapannya, aplikasi ini dapat menjadi solusi sederhana bagi siswa dalam mengelola seluruh catatan kegiatan PKL sekaligus meningkatkan kedisiplinan dan tanggung jawab selama melaksanakan praktik kerja.
+* Oktaviana Putri Kriswantoro
 
-### PKL TRACKER LOCAL
-
-Dikembangkan oleh
-
-Oktaviana Putri Kriswantoro
-
-Amira Dianawati
-
-Aplikasi Pencatatan Presensi dan Logbook Praktik Kerja Lapangan
-
-Catatan tampilan: Gambar pada bagian tampilan merupakan ilustrasi referensi desain, bukan tangkapan layar asli APK yang kamu kirim. Nama halaman dan fitur di atas disusun berdasarkan komponen serta teks yang ditemukan di dalam APK.
+* Amira Dianawati
+* 
